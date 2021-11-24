@@ -1,0 +1,159 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+html, body {
+    height: 100vh;
+    
+}
+body {
+    color: white;
+    font-family:'Courier New', Courier, monospace
+}
+.bg {
+    width: 100%;
+    background-image: linear-gradient(to left, #012500, #004018, #00663B);
+}
+.container {
+    border-radius: 30px;
+    transform: translateY(200px);
+    margin: auto;
+    padding: 30px;
+    width: 80vw;
+    max-width: 820px;
+    height: auto;
+    background-color: #20262B;
+}
+.tittle_div h1 {
+    border: 1px solid #00FF00;
+    border-width: 5px;
+    border-radius: 80px;
+    font-size: 5.5rem;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #20262B;
+}
+.whitecolor {
+    color: #FFFFFF;
+}
+.greencolor {
+    color: #00E832;
+}
+.tittle_div img {
+    float: left;
+}
+.tittle_div, .logo_div, .raffle_div, .button_div, .result_div {
+    padding: 8px;
+    margin-top: 13px;
+    text-align: center;
+}
+.raffle_div h1 {
+    display: inline;
+    font-size: 2.9rem;
+}
+.raffle_div input[type=number] {
+    font-size: 2.0rem;
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00FF00;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 5px;
+    outline: none;
+}
+.button_div button {
+    background-color: #00FF00;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px 35px;
+    margin: 20px 15px;
+    font-size: 1.8rem;
+    color: #302B2B;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.result_div {
+    display: none;
+}
+.result_div h1 {
+    display: inline;
+}
+.result_div .final_result {
+    background-color: #00E832;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2.0rem;
+    color: #302B2B;
+    font-weight: bold;
+    cursor: pointer;
+}
+.button_div button:hover {
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 0 10px 10px rgb(5, 253, 26, 0.5);
+}
+@keyframes button {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.05);
+    }
+}
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 58%;
+    }
+    .bg {
+        background: none #20262B;
+    }
+    .raffle_div input[type=number] {
+        width: 25%;
+    }
+    .raffle_div h1 {
+        font-size: 2.8rem;
+    }
+    .result_div h1 {
+        display: inline;
+        font-size: 2.3rem;
+        display: block;
+        margin-top: 20%;
+    }
+    .result_div .final_result {
+        margin-top: 10px;
+    }
+    .tittle_div h1 {
+        font-size: 4.3rem;
+    }
+    .container {
+        transform: translateY(200px);
+    }
+}
+@media screen and (max-width: 425px){
+    .tittle_div h1 {
+        font-size: 3.3rem;
+    }
+    .result_div h1 {
+        font-size: 1.8rem;
+    }
+    .container {
+        transform: translateY(80px);
+    }
+    .result_div h1 {
+        display: inline;
+        font-size: 2.6rem;
+        display: block;
+        margin-top: 5%;
+    }
+}
